@@ -1,0 +1,248 @@
+*{
+     box-sizing: border-box;
+}
+
+body{
+margin: 0px;
+background: pink;
+height: 100%;
+overflow: scroll;
+
+/*background-image: url(../img/roundpaddy.jpg);*/
+}
+
+.container {
+  display: flex; /* or inline-flex */
+  justify-content: flex-end;
+  height: 100%;
+}
+
+a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+
+/******************************* header section***************************/
+
+header{
+background-image: url(../img/allvarietyrice.jpg);
+height: 30%;
+padding-bottom: 5%;
+}
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 20;
+}
+
+/******************************* Nav bar section***************************/
+
+nav{
+    background-color:black;
+    height:5%;
+    display: flex; /* or inline-flex 
+    justify-content: flex-end;*/
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+float: left;
+text-decoration: none;
+}
+
+
+.right {float: right;}
+
+.active {background-color: #4CAF50;}
+
+a:hover:not(.active) {background-color: #111;}
+
+
+
+/******************************** section part ****************************/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+   width: 100%; 
+}
+
+main{
+/*background-color:indianred;*/
+height: 45%;
+display: flex;
+width: 75%;
+}
+
+section{
+    padding-right: 1px;
+    height: 45%;
+    width:100%;
+    padding-bottom: 1px;
+    margin-right:2px;
+    border-color:bisque;
+}
+
+#heroelement{
+    background-color: aquamarine;
+    margin-bottom: 10px;
+    height:100%;
+    width:100%;
+    border-color:bisque; 
+}
+
+
+
+#coloum1section{
+    background-color: aquamarine;
+    float: left;
+    width:30%;
+    height:100%;
+    border-color:bisque;
+    
+}
+
+#coloum2section{
+    background-color: aquamarine;
+    float: left;
+    height:100%;
+    width:30%;
+    border-color:bisque;
+}
+
+#coloum3section{
+    background-color: aquamarine;
+    float: left;
+    width:39%;
+    height:100%;
+    border-color:bisque;
+}
+
+aside{
+    background-color: blueviolet;
+    height: 100%;
+    width: 25%;
+    float: right;
+    padding-top: 1px;
+}
+
+aside section{
+    border-color: bisque; 
+    border:solid;
+}
+
+/******************************* footer section **************************/
+footer{
+    background-color:rosybrown;
+    height: 20%;
+    display: flex;
+    clear: both;
+}
+
+p{
+    font-size:15px;
+    font-family:Euphemia;
+    color:white;
+}
+
+#footersection1{
+    flex: 50%;
+    float:left;
+    padding-right:10px;
+}
+
+
+#footersection2{
+    flex:20%;
+    float:left;
+    color:white;
+    padding-right:10px;
+}
+
+
+#footersection3{
+    flex:20%;
+    float:right;
+}
+
+
+
+/**************** Fonts for social media related starts ***********/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+/**************** Media query related ***********/
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .row,footer,main,coloum1section,coloum2section, coloum3section,nav {   
+        flex-direction: column; 
+    }
+     
+    li.right, li {
+        float: none;
+    }
+
+    aside {
+		width: 100%;
+        align-items: center;
+        justify-content: center; 
+	}
+
+    
+}
+
+
+

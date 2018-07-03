@@ -1,20 +1,11 @@
-*{
-     box-sizing: border-box;
-}
 
 body{
-margin: 0px;
-background: pink;
-height: 100%;
-overflow: scroll;
-
-/*background-image: url(../img/roundpaddy.jpg);*/
-}
-
-.container {
-  display: flex; /* or inline-flex */
-  justify-content: flex-end;
-  height: 100%;
+    background: pink;
+    height: 100%;
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    /*background-image: url(../img/roundpaddy.jpg);*/
 }
 
 a{
@@ -31,12 +22,12 @@ a{
 /******************************* header section***************************/
 
 header{
-background-image: url(../img/allvarietyrice.jpg);
-height: 30%;
-padding-bottom: 5%;
+    background-image: url(../img/logo.jpeg);
+    height: 30%;
+    padding-bottom: 5%;
 }
 
-p{
+header p{
     color: white;
     text-align: center;
     font-size: 20;
@@ -47,21 +38,16 @@ p{
 nav{
     background-color:black;
     height:5%;
-    display: flex; /* or inline-flex 
-    justify-content: flex-end;*/
     text-align: center;
 }
 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
     background-color: #333;
 }
 
 li{
-float: left;
 text-decoration: none;
 }
 
@@ -76,78 +62,77 @@ a:hover:not(.active) {background-color: #111;}
 
 /******************************** section part ****************************/
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+article{
+    margin: 10px 10px;
+    text-align: center;
 }
 
-article{
-   width: 100%; 
+article p{
+    font-family: sans-serif;
+    color: black;
+    width: 70%;
+    margin: auto;
 }
+
 
 main{
-/*background-color:indianred;*/
-height: 45%;
-display: flex;
-width: 75%;
+    /*background-color:indianred;*/
+    display: flex;
+    flex-direction: row;
 }
 
-section{
+main p {
+    padding-right:20px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.mainsection{
     padding-right: 1px;
-    height: 45%;
-    width:100%;
+    padding-left: 1px;
     padding-bottom: 1px;
-    margin-right:2px;
+    margin-right:5px;
     border-color:bisque;
+    background-color:#333;
+    text-align: left;
+    border:solid; 
+    flex:33%;  
 }
 
-#heroelement{
-    background-color: aquamarine;
-    margin-bottom: 10px;
-    height:100%;
-    width:100%;
-    border-color:bisque; 
+.thirdrow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left:10px;
 }
 
-
-
-#coloum1section{
-    background-color: aquamarine;
-    float: left;
-    width:30%;
-    height:100%;
-    border-color:bisque;
-    
-}
-
-#coloum2section{
-    background-color: aquamarine;
-    float: left;
-    height:100%;
-    width:30%;
-    border-color:bisque;
-}
-
-#coloum3section{
-    background-color: aquamarine;
-    float: left;
-    width:39%;
-    height:100%;
-    border-color:bisque;
+.thirdrow p{
+    width: 70%;
 }
 
 aside{
-    background-color: blueviolet;
-    height: 100%;
-    width: 25%;
-    float: right;
-    padding-top: 1px;
+    background-color:white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
-aside section{
-    border-color: bisque; 
-    border:solid;
+.asidesection{
+ border:solid;
+ display: flex;
+ flex-direction: row;
 }
+
+.asideparagraph{
+    color: black;
+    padding-right:10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+
 
 /******************************* footer section **************************/
 footer{
@@ -157,10 +142,11 @@ footer{
     clear: both;
 }
 
-p{
+.footerparagraph{
     font-size:15px;
     font-family:Euphemia;
     color:white;
+    text-align: center;
 }
 
 #footersection1{
@@ -220,14 +206,14 @@ p{
   color: white;
 }
 
-
+.fa-star{content:"\f005"}
 
 /**************** Media query related ***********/
 
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .row,footer,main,coloum1section,coloum2section, coloum3section,nav {   
+    .row,footer,main,.thirdrow,ul {   
         flex-direction: column; 
     }
      
@@ -236,9 +222,9 @@ p{
     }
 
     aside {
-		width: 100%;
-        align-items: center;
-        justify-content: center; 
+		width: 100%; 
+        text-align: center;
+        justify-content: center;
 	}
 
     

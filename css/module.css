@@ -1,0 +1,124 @@
+/******************************* Nav bar section***************************/
+
+nav{
+    background-color:black;
+    height:5%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    background-color: #333;
+}
+
+li{
+text-decoration: none;
+}
+
+.right {float: right;}
+
+.active {background-color: #4CAF50;}
+
+a:hover:not(.active) {background-color: #111;}
+
+
+/****************************** hero element section**********************/
+
+
+article{
+    margin: 10px 10px;
+    text-align: center;
+}
+
+article p{
+    font-family: sans-serif;
+    color: black;
+    width: 70%;
+    margin: auto;
+}
+
+
+/********************************* main section*******************************/
+
+main{
+    /*background-color:indianred;*/
+    display: flex;
+    flex-direction: row;
+}
+
+main p {
+    padding-right:20px;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.mainsection{
+    padding-right: 1px;
+    padding-left: 1px;
+    padding-bottom: 1px;
+    margin-right:5px;
+    border-color:bisque;
+    background-color:#333;
+    text-align: left;
+    border:solid; 
+    flex:33%;  
+}
+
+/**************************************aside section *************************/
+
+aside{
+    background-color:white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.asidesection{
+ border:solid;
+ display: flex;
+ flex-direction: row;
+}
+
+.asideparagraph{
+    color: black;
+    padding-right:10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+/******************************* footer section **************************/
+footer{
+    background-color:rosybrown;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footersection{
+    padding-right:10px;
+}
+
+.footerparagraph{
+    font-size:15px;
+    font-family:Euphemia;
+    color:white;
+    text-align: center;
+}
+
+#footersection1{
+    flex: 50%; 
+}
+
+
+#footersection2{
+    flex:20%;
+    color:white;
+}
+
+
+#footersection3{
+    flex:20%;
+}
+

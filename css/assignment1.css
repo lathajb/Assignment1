@@ -16,7 +16,11 @@ a{
     text-decoration: none;
 }
 
-
+h2{
+    font-family: sans-serif;
+    font-size: 20em;
+    color:#111;
+}
 
 
 /******************************* header section***************************/
@@ -121,7 +125,9 @@ main p {
 
 .thirdrow section p{
         text-align: left;
+
 }
+
 
 aside{
     background-color:white;

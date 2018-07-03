@@ -23,8 +23,11 @@ a{
 
 header{
     background-image: url(../img/logo.jpeg);
-    height: 30%;
-    padding-bottom: 5%;
+    position: fixed;
+    top:0;
+    width: 100%;
+    
+    
 }
 
 header p{
@@ -39,6 +42,8 @@ nav{
     background-color:black;
     height:5%;
     text-align: center;
+    margin-top:50px;
+    padding-bottom: 10px;
 }
 
 ul{
@@ -94,7 +99,7 @@ main p {
     margin-right:5px;
     border-color:bisque;
     background-color:#333;
-    text-align: left;
+    text-align: center;
     border:solid; 
     flex:33%;  
 }
@@ -106,21 +111,28 @@ main p {
     margin-left:10px;
 }
 
-.thirdrow p{
-    width: 70%;
+.thirdrow section {
+ flex: 80%;
+} 
+
+.thirdrow aside{
+   flex : 20%;
+}
+
+.thirdrow section p{
+        text-align: left;
 }
 
 aside{
     background-color:white;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-right:10px;
 }
 
 .asidesection{
  border:solid;
- display: flex;
- flex-direction: row;
 }
 
 .asideparagraph{
@@ -139,7 +151,6 @@ footer{
     background-color:rosybrown;
     height: 20%;
     display: flex;
-    clear: both;
 }
 
 .footerparagraph{
@@ -151,14 +162,12 @@ footer{
 
 #footersection1{
     flex: 50%;
-    float:left;
     padding-right:10px;
 }
 
 
 #footersection2{
     flex:20%;
-    float:left;
     color:white;
     padding-right:10px;
 }
@@ -166,10 +175,11 @@ footer{
 
 #footersection3{
     flex:20%;
-    float:right;
+
 }
 
 
+    
 
 /**************** Fonts for social media related starts ***********/
 
@@ -227,7 +237,13 @@ footer{
         justify-content: center;
 	}
 
-    
+    #footersection2 p{
+        text-align: center;
+    }
+
+    .active {background-color:#333;}
+
+      
 }
 
 
